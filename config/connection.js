@@ -1,11 +1,11 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-    host: "localhost",
+    host: "jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
-    user: "root",
-    password: "root",
-    database: "burgers_db"
+    user: "bfe5zhncz72gyt8e",
+    password: "bbm0x7i90hsb4dj0",
+    database: "f4yoscukp3vr4gi5"
 });
 
 connection.connect(function(err) {
@@ -17,3 +17,24 @@ connection.connect(function(err) {
 });
 
 module.exports = connection;
+
+/* 
+Connection to Heroku
+host: jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	
+
+Connection Username: bfe5zhncz72gyt8e
+
+password: bbm0x7i90hsb4dj0
+
+database: f4yoscukp3vr4gi5 
+
+
+Connection for localhost
+
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "root",
+    database: "burgers_db"
+    
+    */
