@@ -21,7 +21,13 @@ if (process.env.JAWSDB_URL) {
 //     database: "f4yoscukp3vr4gi5"
 // });
 
-connection.connect();
+connection.connect(function (err) {
+    if (err) {
+        console.error("error connecting: " + err.stack);
+        return;
+    }
+    console.log("connected as id " + connection.threadId);
+});
 
 module.exports = connection;
 
