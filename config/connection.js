@@ -14,11 +14,11 @@ if (process.env.JAWSDB_URL) {
 };
 
 // const connection = mysql.createConnection({
-//     host: "jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+//     host: "localhost",
 //     port: 3306,
-//     user: "bfe5zhncz72gyt8e",
-//     password: "bbm0x7i90hsb4dj0",
-//     database: "f4yoscukp3vr4gi5"
+//     user: "root",
+//     password: "root",
+//     database: "burgers_db"
 // });
 
 connection.connect(function (err) {
